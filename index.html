@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birdverse.ai - Coming Soon</title>
+    <style>
+        /* BASE STYLES - LIGHT MODE */
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #4b5563; /* Dark Gray text */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* TOP LABEL */
+        .brand-label {
+            font-size: 1.1rem;
+            color: #6b7280;
+            margin-bottom: 30px;
+            letter-spacing: 0.5px;
+        }
+
+        /* THE BLOCK LOGO (CSS RECREATION) */
+        .logo-container {
+            display: flex;
+            flex-wrap: wrap; /* Allows wrapping on mobile */
+            justify-content: center;
+            gap: 8px; /* Space between boxes */
+            margin-bottom: 40px;
+        }
+
+        .letter-box {
+            background-color: #9ca3af; /* The exact gray from your image */
+            color: white;
+            width: 60px;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: 900;
+            border-radius: 2px; /* Slight softening of corners */
+            user-select: none;
+        }
+
+        /* TAGLINES */
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #4b5563;
+            margin-bottom: 15px;
+            letter-spacing: -0.5px;
+        }
+
+        .coming-soon {
+            font-family: "Georgia", "Times New Roman", serif; /* Serif for elegant feel */
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #6b7280;
+            margin-bottom: 50px;
+        }
+
+        /* INQUIRY FORM */
+        .form-container {
+            width: 100%;
+            max-width: 400px;
+            padding-top: 20px;
+            border-top: 1px solid #e5e7eb; /* Subtle separator line */
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #9ca3af;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #d1d5db;
+            border-radius: 4px;
+            font-size: 1rem;
+            background: #f9fafb;
+            color: #374151;
+            transition: all 0.2s;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #9ca3af;
+            background: #fff;
+            box-shadow: 0 0 0 3px rgba(156, 163, 175, 0.2);
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #6b7280; /* Matches logo gray */
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        button:hover {
+            background-color: #4b5563; /* Darker gray on hover */
+        }
+
+        /* MOBILE ADJUSTMENTS */
+        @media (max-width: 600px) {
+            .letter-box {
+                width: 40px;
+                height: 50px;
+                font-size: 1.8rem;
+                gap: 4px;
+            }
+            h2 { font-size: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="brand-label">Birdverse.ai</div>
+
+    <div class="logo-container">
+        <div class="letter-box">B</div>
+        <div class="letter-box">I</div>
+        <div class="letter-box">R</div>
+        <div class="letter-box">D</div>
+        <div class="letter-box">V</div>
+        <div class="letter-box">E</div>
+        <div class="letter-box">R</div>
+        <div class="letter-box">S</div>
+        <div class="letter-box">E</div>
+    </div>
+
+    <h2>How Smart Money Flies Private</h2>
+    <p class="coming-soon">Coming Soon</p>
+
+    <div class="form-container">
+        <form action="https://formspree.io/f/manrzlvg" method="POST">
+            <input type="hidden" name="_subject" value="New B I R D V E R S E Inquiry">
+
+            <div class="input-group">
+                <label for="email">Request Access</label>
+                <input type="email" name="email" id="email" placeholder="name@company.com" required>
+            </div>
+
+            <div class="input-group">
+                <textarea name="message" rows="2" placeholder="Tell us about your private aviation needs (Optional)"></textarea>
+            </div>
+
+            <button type="submit">Notify Me</button>
+        </form>
+    </div>
+
+</body>
+</html>
