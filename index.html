@@ -19,7 +19,7 @@
             min-height: 100vh;
             padding: 20px;
             text-align: center;
-            overflow-x: hidden; /* Prevents side scrolling */
+            overflow-x: hidden;
         }
 
         /* TOP LABEL */
@@ -30,29 +30,21 @@
             letter-spacing: 0.5px;
         }
 
-        /* THE BLOCK LOGO */
+        /* LOGO CONTAINER */
         .logo-container {
             display: flex;
-            flex-wrap: nowrap; /* CHANGED: Forces single line always */
             justify-content: center;
-            gap: 8px; 
+            align-items: center;
             margin-bottom: 40px;
             width: 100%;
         }
 
-        .letter-box {
-            background-color: #9ca3af; 
-            color: white;
-            width: 60px;
-            height: 75px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 2.5rem;
-            font-weight: 900;
-            border-radius: 2px;
-            user-select: none;
-            flex-shrink: 0; /* Prevents boxes from squishing weirdly */
+        /* IMAGE LOGO STYLES */
+        .logo-img {
+            max-width: 100%;     /* Responsive on mobile */
+            width: 400px;        /* Maximum width on desktop */
+            height: auto;        /* Maintains aspect ratio */
+            display: block;
         }
 
         /* TAGLINES */
@@ -135,18 +127,6 @@
 
         /* MOBILE FIXES */
         @media (max-width: 600px) {
-            .logo-container {
-                gap: 3px; /* Tighter gap on phones */
-            }
-
-            .letter-box {
-                /* Responsive Math: Fits 9 letters perfectly on any screen */
-                width: 9vw;  
-                height: 11vw;
-                font-size: 1.4rem;
-                border-radius: 2px;
-            }
-
             h2 { 
                 font-size: 1.2rem; 
                 margin-top: 10px;
@@ -154,6 +134,11 @@
             
             .brand-label {
                 margin-bottom: 20px;
+            }
+            
+            /* Logo width adjusts slightly smaller on very narrow phones */
+            .logo-img {
+                width: 85%; 
             }
         }
     </style>
@@ -163,15 +148,7 @@
     <div class="brand-label">Birdverse.ai</div>
 
     <div class="logo-container">
-        <div class="letter-box">B</div>
-        <div class="letter-box">I</div>
-        <div class="letter-box">R</div>
-        <div class="letter-box">D</div>
-        <div class="letter-box">V</div>
-        <div class="letter-box">E</div>
-        <div class="letter-box">R</div>
-        <div class="letter-box">S</div>
-        <div class="letter-box">E</div>
+        <img src="birdverse.png" alt="Birdverse Logo" class="logo-img">
     </div>
 
     <h2></h2>
