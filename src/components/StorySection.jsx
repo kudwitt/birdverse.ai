@@ -28,7 +28,7 @@ const StorySection = () => {
             <div className="container">
                 <p className="story-text">
                     <span className="story-segment" style={{ opacity: Math.max(0.1, Math.min(1, reveal * 1.5)) }}>
-                        Believe it or not 20 years ago it cost <span className="highlight-warm">$400</span> in broker commissions just to trade 100 shares of stock.
+                        Believe it or not 30+ years ago it cost <span className="highlight-warm">$400</span> in broker commissions just to trade 100 shares of stock.
                     </span>
                     <br /><br />
                     <span className="story-segment" style={{ opacity: Math.max(0.1, Math.min(1, (reveal - 0.3) * 2)) }}>

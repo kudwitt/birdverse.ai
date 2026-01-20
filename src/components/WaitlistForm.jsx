@@ -5,7 +5,7 @@ const WaitlistForm = () => {
     const [status, setStatus] = useState('idle'); // idle, loading, success, error
 
     // Replace this with your actual Formspree Endpoint or API URL
-    const FORM_ENDPOINT = "https://formspree.io/f/FORM_ID_HERE";
+    const FORM_ENDPOINT = "https://formspree.io/f/manrzlvg";
 
     const handleSubmit = async (e) => {
         e.preventDefault();
