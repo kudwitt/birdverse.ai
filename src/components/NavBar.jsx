@@ -94,10 +94,26 @@ const NavBar = () => {
                     padding: 4px 12px;
                     background: var(--color-accent); 
                     color: #ffffff !important;
+                    white-space: nowrap;
                 }
                 
                 .btn-small:hover {
                      background: var(--color-accent-hover);
+                }
+
+                @media (max-width: 480px) {
+                    .nav-links a:not(.btn) {
+                        display: none;
+                    }
+                    .nav-brand {
+                        font-size: 16px;
+                    }
+                    .nav-logo {
+                        height: 24px;
+                    }
+                    .nav-links {
+                        gap: 12px;
+                    }
                 }
             `}</style>
         </nav>

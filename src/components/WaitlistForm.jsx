@@ -202,6 +202,12 @@ const WaitlistForm = () => {
                 @media(max-width: 734px) {
                     h2 { font-size: 36px; }
                 }
+
+                @media(max-width: 480px) {
+                    h2 { font-size: 28px; }
+                    p { font-size: 17px; }
+                    .notify-section { padding: 80px 0; }
+                }
             `}</style>
         </section>
     );

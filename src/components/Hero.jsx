@@ -110,6 +110,19 @@ const Hero = () => {
                     .hero-headline {
                         font-size: 48px;
                     }
+                    .hero-cta-container {
+                        flex-direction: column;
+                        gap: 16px;
+                    }
+                }
+
+                @media (max-width: 480px) {
+                    .hero-headline {
+                        font-size: 36px;
+                    }
+                    .hero-section {
+                        padding-top: 100px;
+                    }
                 }
             `}</style>
         </section>

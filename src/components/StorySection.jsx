@@ -36,7 +36,7 @@ const StorySection = () => {
                     </span>
                     <br /><br />
                     <span className="story-segment highlight-brand" style={{ opacity: Math.max(0.1, Math.min(1, (reveal - 0.6) * 3)) }}>
-                        Birdverse instantly connects the world's best operators directly to private fliers to provide a plethora of options and full pricing transparency.
+                        Birdverse instantly connects the world's best operators directly with private fliers to provide a plethora of options and full pricing transparency.
                     </span>
                 </p>
             </div>

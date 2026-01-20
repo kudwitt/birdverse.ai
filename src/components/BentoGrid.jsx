@@ -160,12 +160,21 @@ const BentoGrid = () => {
                     .grid {
                         grid-template-columns: 1fr;
                         grid-template-rows: auto;
+                        gap: 16px;
                     }
-                    .network {
-                        grid-column: 1;
+                    .flier, .operator, .network {
+                        grid-column: 1 !important;
+                        grid-row: auto !important;
                     }
                     .section-title {
-                        font-size: 40px;
+                        font-size: 36px;
+                        margin-bottom: 40px;
+                    }
+                    .card-image-top {
+                        height: 180px;
+                    }
+                    .card h3 {
+                        font-size: 24px;
                     }
                 }
             `}</style>
