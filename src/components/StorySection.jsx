@@ -44,8 +44,8 @@ const StorySection = () => {
             <style>{`
                 .story-section {
                     background-color: #000;
-                    padding: 200px 0;
-                    margin-top: 40px;
+                    padding: 100px 0 200px;
+                    margin-top: 0;
                 }
 
                 .story-text {

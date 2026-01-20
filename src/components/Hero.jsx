@@ -18,22 +18,37 @@ const Hero = () => {
                     <a href="#story" className="link-arrow">Learn more <span className="arrow">›</span></a>
                 </div>
 
-                {/* Image removed by user request */}
+                <div className="scroll-indicator animate-float fade-in-up" style={{ animationDelay: '1s' }}>
+                    <a href="#story" aria-label="Scroll down">
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 13L12 18L17 13" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                            <path d="M7 6L12 11L17 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
+                        </svg>
+                    </a>
+                </div>
+
+                <div className="hero-threshold"></div>
             </div>
 
             <style>{`
                 .hero-section {
                     background: var(--color-bg);
-                    padding-top: 140px; /* Space for Navbar */
+                    padding-top: 160px; /* Space for Navbar */
                     text-align: center;
-                    padding-bottom: 80px;
+                    padding-bottom: 0;
+                    min-height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+                    position: relative;
                 }
 
                 .hero-brand {
                     font-size: 23px;
                     font-weight: 600;
                     color: var(--color-accent); /* Like "New" or "Pro" label */
-                    margin-bottom: 12px;
+                    margin-bottom: 16px;
                     letter-spacing: 0.011em;
                 }
 
@@ -43,7 +58,7 @@ const Hero = () => {
                     font-weight: 600;
                     letter-spacing: -0.015em;
                     color: var(--color-text);
-                    margin-bottom: 24px;
+                    margin-bottom: 32px;
                 }
                 
                 .text-gradient {
@@ -56,7 +71,21 @@ const Hero = () => {
                     align-items: center;
                     justify-content: center;
                     gap: 20px;
-                    margin-bottom: 60px;
+                    margin-bottom: 40px;
+                }
+
+                .scroll-indicator {
+                    position: absolute;
+                    bottom: 40px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: var(--color-text-secondary);
+                    cursor: pointer;
+                    z-index: 3;
+                }
+                
+                .scroll-indicator svg {
+                    display: block;
                 }
                 
                 .link-arrow {
@@ -108,20 +137,27 @@ const Hero = () => {
 
                 @media (max-width: 734px) {
                     .hero-headline {
-                        font-size: 48px;
+                        font-size: 52px;
                     }
                     .hero-cta-container {
                         flex-direction: column;
                         gap: 16px;
                     }
+                    .hero-section {
+                        padding-top: 120px;
+                        min-height: 90vh; /* Better for mobile devices with address bars */
+                    }
+                    .scroll-indicator {
+                        bottom: 60px;
+                    }
                 }
 
                 @media (max-width: 480px) {
                     .hero-headline {
-                        font-size: 36px;
+                        font-size: 40px;
                     }
-                    .hero-section {
-                        padding-top: 100px;
+                    .hero-brand {
+                        font-size: 19px;
                     }
                 }
             `}</style>
