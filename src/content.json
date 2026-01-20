@@ -1,0 +1,24 @@
+{
+    "hero": {
+        "title": "Birdverse",
+        "subtitle": "How Smart Money Flies Private",
+        "tagline": "The Growth Engine for Part 135 Operators",
+        "ctaText": "Request Access"
+    },
+    "waitlist": {
+        "title": "Join the Birdverse",
+        "description": "Secure your spot in the future of private aviation.",
+        "roles": {
+            "customer": "Passenger",
+            "operator": "Operator"
+        },
+        "buttonText": {
+            "customer": "Join Waitlist",
+            "operator": "Apply as Operator"
+        }
+    },
+    "footer": {
+        "brand": "Birdverse",
+        "copyright": "All rights reserved."
+    }
+}
