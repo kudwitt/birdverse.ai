@@ -30,7 +30,7 @@ const Hero = () => {
                 }
 
                 .hero-brand {
-                    font-size: 21px;
+                    font-size: 23px;
                     font-weight: 600;
                     color: var(--color-accent); /* Like "New" or "Pro" label */
                     margin-bottom: 12px;
@@ -62,7 +62,7 @@ const Hero = () => {
                 .link-arrow {
                     color: var(--color-accent);
                     text-decoration: none;
-                    font-size: 21px;
+                    font-size: 23px;
                     font-weight: 400;
                 }
                 

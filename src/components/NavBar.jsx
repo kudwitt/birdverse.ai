@@ -64,7 +64,7 @@ const NavBar = () => {
                 
                 .nav-brand {
                     font-weight: 600;
-                    font-size: 19px;
+                    font-size: 21px;
                     letter-spacing: -0.01em;
                     color: var(--color-text);
                 }
@@ -76,7 +76,7 @@ const NavBar = () => {
                 }
 
                 .nav-links a {
-                    font-size: 12px;
+                    font-size: 15px;
                     color: var(--color-text);
                     text-decoration: none;
                     opacity: 0.8;
@@ -90,7 +90,7 @@ const NavBar = () => {
                 }
 
                 .btn-small {
-                    font-size: 12px;
+                    font-size: 15px;
                     padding: 4px 12px;
                     background: var(--color-accent); 
                     color: #ffffff !important;

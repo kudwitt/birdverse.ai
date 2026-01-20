@@ -30,7 +30,7 @@ const BentoGrid = () => {
                         <div className="card-content">
                             <span className="eyebrow">Operators</span>
                             <h3>Remove the middleman.</h3>
-                            <p>Provide service directly to private fliers and communicate directly with them to insure their needs are met and to build a direct relationship.</p>
+                            <p>Provide service directly to private fliers and communicate directly with them to insure their needs are met and to build a direct relationships.</p>
                         </div>
                     </div>
 
@@ -103,7 +103,7 @@ const BentoGrid = () => {
                 
                 .eyebrow {
                     display: block;
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: 600;
                     text-transform: uppercase;
                     letter-spacing: 0.05em;
@@ -122,7 +122,7 @@ const BentoGrid = () => {
                 }
                 
                 .card p {
-                    font-size: 19px;
+                    font-size: 20px;
                     color: var(--color-text-secondary);
                     line-height: 1.4;
                 }

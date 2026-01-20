@@ -49,7 +49,7 @@ const StorySection = () => {
                 }
 
                 .story-text {
-                    font-size: 56px;
+                    font-size: 60px;
                     line-height: 1.1;
                     font-weight: 600;
                     letter-spacing: -0.015em;
@@ -71,11 +71,12 @@ const StorySection = () => {
                     background: linear-gradient(90deg, #fff, var(--color-brand-blue));
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
+                    -webkit-background-clip: text;
                 }
 
                 @media (max-width: 734px) {
                     .story-text {
-                        font-size: 32px;
+                        font-size: 36px;
                     }
                 }
             `}</style>

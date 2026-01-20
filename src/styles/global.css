@@ -16,7 +16,7 @@ body {
     letter-spacing: -0.012em;
     /* Apple text tracking */
     line-height: 1.47059;
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 400;
 }
 
@@ -44,7 +44,7 @@ section {
 /* Apple Buttons */
 .btn {
     display: inline-block;
-    font-size: 17px;
+    font-size: 19px;
     /* 17px usually for body, buttons might be smaller or same */
     line-height: 1.17648;
     font-weight: 400;

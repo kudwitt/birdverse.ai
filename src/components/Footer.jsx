@@ -39,7 +39,7 @@ const Footer = () => {
       <style>{`
                 .footer {
                     background-color: #f5f5f7;
-                    font-size: 12px;
+                    font-size: 14px;
                     color: #86868b;
                     padding: 40px 0 20px;
                 }
@@ -54,7 +54,7 @@ const Footer = () => {
                 }
                 
                 .footer-col h4 {
-                    font-size: 12px;
+                    font-size: 14px;
                     font-weight: 600;
                     color: #1d1d1f;
                     margin-bottom: 10px;

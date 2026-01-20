@@ -109,7 +109,7 @@ const WaitlistForm = () => {
                 }
                 
                 p {
-                    font-size: 21px;
+                    font-size: 23px;
                     color: var(--color-text-secondary);
                     margin-bottom: 40px;
                 }
@@ -124,7 +124,7 @@ const WaitlistForm = () => {
                     display: block;
                     width: 100%;
                     padding: 16px 60px 16px 24px;
-                    font-size: 17px;
+                    font-size: 19px;
                     border: 1px solid #d2d2d7;
                     border-radius: var(--radius-btn);
                     outline: none;
