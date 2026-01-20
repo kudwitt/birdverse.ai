@@ -18,8 +18,8 @@ const Footer = () => {
           <div className="footer-col">
             <h4>Platform</h4>
             <ul>
-              <li><a href="#">Private Flier</a></li>
-              <li><a href="#">Operator</a></li>
+              <li><a href="#">Private Fliers</a></li>
+              <li><a href="#">Operators</a></li>
               <li><a href="#">Security</a></li>
             </ul>
           </div>

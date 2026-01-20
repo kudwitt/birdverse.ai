@@ -9,15 +9,21 @@ const WaitlistForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if (!email) return;
+
         setStatus('loading');
 
         try {
-            // If the user hasn't set up the endpoint, we simulate success for the demo
-            if (FORM_ENDPOINT.includes('FORM_ID_HERE')) {
-                console.warn('Form submission simulated. Replace FORM_ENDPOINT in WaitlistForm.jsx with your real API URL.');
-                await new Promise(resolve => setTimeout(resolve, 1000)); // Simulate network delay
+            // Local simulation if no real endpoint provided
+            if (FORM_ENDPOINT.includes('FORM_ID_HERE') || !FORM_ENDPOINT.startsWith('http')) {
+                console.log('Simulating form submission for:', email);
+                await new Promise(resolve => setTimeout(resolve, 1200));
                 setStatus('success');
-                setEmail('');
+                // Reset to idle after 5 seconds so they can see the success and then try another email if they want
+                setTimeout(() => {
+                    setStatus('idle');
+                    setEmail('');
+                }, 5000);
                 return;
             }
 
@@ -32,15 +38,17 @@ const WaitlistForm = () => {
 
             if (response.ok) {
                 setStatus('success');
-                setEmail('');
+                setTimeout(() => {
+                    setStatus('idle');
+                    setEmail('');
+                }, 5000);
             } else {
                 throw new Error('Submission failed');
             }
         } catch (error) {
             console.error('Error submitting form:', error);
             setStatus('error');
-            // Revert to idle after 3 seconds so they can try again
-            setTimeout(() => setStatus('idle'), 3000);
+            setTimeout(() => setStatus('idle'), 4000);
         }
     };
 
@@ -60,9 +68,14 @@ const WaitlistForm = () => {
                             onChange={(e) => setEmail(e.target.value)}
                             required
                             className={`notify-input ${status === 'error' ? 'input-error' : ''}`}
-                            disabled={status === 'loading' || status === 'success'}
+                            disabled={status === 'loading'}
                         />
-                        <button type="submit" className={`circle-btn ${status}`} disabled={status === 'loading' || status === 'success'}>
+                        <button
+                            type="submit"
+                            className={`circle-btn ${status}`}
+                            disabled={status === 'loading'}
+                            aria-label="Join Waitlist"
+                        >
                             {status === 'loading' ? (
                                 <span className="loader"></span>
                             ) : status === 'success' ? (
