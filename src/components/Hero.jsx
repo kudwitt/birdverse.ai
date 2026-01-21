@@ -79,14 +79,20 @@ const Hero = () => {
                     bottom: 40px;
                     left: 50%;
                     transform: translateX(-50%);
-                    color: #0071e3;
                     cursor: pointer;
                     z-index: 3;
                     transition: opacity 0.3s;
+                    text-align: center;
+                }
+                
+                .scroll-indicator a {
+                    display: inline-block;
+                    line-height: 0;
                 }
                 
                 .scroll-indicator svg {
                     display: block;
+                    margin: 0 auto;
                 }
                 
                 .scroll-indicator:hover {
