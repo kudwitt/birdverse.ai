@@ -17,19 +17,20 @@ const Hero = () => {
                     <a href="#waitlist" className="btn btn-primary">Notify me</a>
                     <a href="#story" className="link-arrow">Learn more <span className="arrow">›</span></a>
                 </div>
+            </div>
 
-                <div className="scroll-indicator animate-float fade-in-up" style={{ animationDelay: '1s' }}>
-                    <a href="#story" aria-label="Scroll down">
-                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M7 13L12 18L17 13" stroke="#5B7C99" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                            <path d="M7 6L12 11L17 6" stroke="#5B7C99" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
-                        </svg>
-                    </a>
-                </div>
+            <div className="scroll-indicator animate-float fade-in-up" style={{ animationDelay: '1s' }}>
+                <a href="#story" aria-label="Scroll down">
+                    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 13L12 18L17 13" stroke="#5B7C99" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                        <path d="M7 6L12 11L17 6" stroke="#5B7C99" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" opacity="0.5" />
+                    </svg>
+                </a>
+            </div>
 
-                <div className="hero-threshold"></div>
+            <div className="hero-threshold"></div>
 
-                <style>{`
+            <style>{`
                 .hero-section {
                     background: var(--color-bg);
                     padding-top: 160px; /* Space for Navbar */
