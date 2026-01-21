@@ -16,7 +16,7 @@ const BentoGrid = () => {
                         <div className="card-content">
                             <span className="eyebrow">Private Fliers</span>
                             <h3>Fly smart.</h3>
-                            <p>Trip quotes are a text message away. Plus, there are no membership fees and a modest 5% platform fee - as opposed to the usual 15%, 20% or more opaque broker fees.</p>
+                            <p>Trip quotes are a text message away. Plus, with no membership fees and a transparent platform fee, that's a fraction of traditional broker markups, you'll save thousands on every trip.</p>
                         </div>
                     </div>
 
