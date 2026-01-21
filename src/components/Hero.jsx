@@ -79,15 +79,19 @@ const Hero = () => {
                     bottom: 40px;
                     left: 50%;
                     transform: translateX(-50%);
+                    -webkit-transform: translateX(-50%);
                     cursor: pointer;
                     z-index: 3;
                     transition: opacity 0.3s;
                     text-align: center;
+                    width: 30px;
+                    margin-left: -15px;
                 }
                 
                 .scroll-indicator a {
-                    display: inline-block;
+                    display: block;
                     line-height: 0;
+                    text-decoration: none;
                 }
                 
                 .scroll-indicator svg {
