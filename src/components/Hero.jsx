@@ -93,6 +93,8 @@ const Hero = () => {
                     opacity: 0.7;
                 }
                 
+                /* Scroll indicator uses Birdverse brand blue #0071e3 */
+                
                 .link-arrow {
                     color: var(--color-accent);
                     text-decoration: none;
