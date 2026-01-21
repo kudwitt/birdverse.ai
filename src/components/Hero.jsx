@@ -75,17 +75,22 @@ const Hero = () => {
                 }
 
                 .scroll-indicator {
-                    position: absolute;
+                    position: fixed;
                     bottom: 40px;
                     left: 50%;
                     transform: translateX(-50%);
-                    color: var(--color-text-secondary);
+                    color: #0071e3;
                     cursor: pointer;
                     z-index: 3;
+                    transition: opacity 0.3s;
                 }
                 
                 .scroll-indicator svg {
                     display: block;
+                }
+                
+                .scroll-indicator:hover {
+                    opacity: 0.7;
                 }
                 
                 .link-arrow {
