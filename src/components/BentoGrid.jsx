@@ -37,7 +37,7 @@ const BentoGrid = () => {
                     {/* Card 3: Network (Compliant) */}
                     <div className="card network">
                         <h3>See Everything</h3>
-                        <p>See who you can fly with and what you can be flying on from our global network of top-rated private aviation operators. No hidden details—just a simple list with safety credentials, aircraft details, and fully transparent pricing.</p>
+                        <p>See who you can fly with and which aircraft you can be flying on - from our global network of top-rated private aviation operators. No hidden details. Just a simple list with safety credentials, aircraft details, and fully transparent pricing.</p>
                     </div>
                 </div>
             </div>
