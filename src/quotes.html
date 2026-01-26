@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Flight Quotes | Birdverse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./quotes.css">
+</head>
+
+<body>
+    <div class="cockpit-container">
+
+        <!-- Flight HUD Header -->
+        <header class="flight-hud">
+            <div class="hud-left">
+                <div class="hud-title">Flight Route</div>
+                <div class="route-display">
+                    <span class="airport-code">VNY</span>
+                    <div class="route-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </div>
+                    <span class="airport-code">TEB</span>
+                </div>
+            </div>
+
+            <div class="hud-stats">
+                <div class="detail-item">
+                    <span class="detail-label">Date</span>
+                    <span class="detail-value">Oct 12, 2025</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Pax</span>
+                    <span class="detail-value">6</span>
+                </div>
+                <div class="detail-item">
+                    <span class="detail-label">Status</span>
+                    <span class="detail-value status-found">4 Quotes</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="quote-grid">
+
+            <!-- Quote 1: Privaira -->
+            <article class="quote-card">
+                <div class="card-header">
+                    <div class="operator-brand">
+                        <div class="operator-logo-text">PRIVAIRA</div>
+                        <span class="operator-meta">Operator</span>
+                    </div>
+                    <div class="safety-pill safety-platinum">ARGUS Platinum</div>
+                </div>
+
+                <div class="aircraft-info">
+                    <div class="aircraft-type">Hawker 800XP</div>
+                    <div class="aircraft-specs">
+                        <span>Midsize</span> • <span style="opacity:0.7">N800PV</span>
+                    </div>
+                </div>
+
+                <div class="amenities-row">
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        8 Pax
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14" />
+                            <path d="M2 20h20" />
+                            <path d="M14 12v.01" />
+                        </svg>
+                        Enclosed Lav
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                            <line x1="12" y1="20" x2="12.01" y2="20" />
+                        </svg>
+                        WiFi
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="crew-mini">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face"
+                            class="crew-avatar-mini" alt="Pilot">
+                        <span>Cpt. Sarah Miller & Crew</span>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-row">
+                            <span class="price-label">Total Trip Cost</span>
+                            <span class="price-main">$14,500</span>
+                        </div>
+                    </div>
+
+                    <button class="select-btn">Select Aircraft</button>
+                </div>
+            </article>
+
+            <!-- Quote 2: Jetvia -->
+            <article class="quote-card">
+                <div class="card-header">
+                    <div class="operator-brand">
+                        <div class="operator-logo-text" style="color: #4facfe;">JETVIA</div>
+                        <span class="operator-meta">Operator</span>
+                    </div>
+                    <div class="safety-pill safety-platinum">ARGUS Platinum</div>
+                </div>
+
+                <div class="aircraft-info">
+                    <div class="aircraft-type">Learjet 60XR</div>
+                    <div class="aircraft-specs">
+                        <span>Light Jet</span> • <span style="opacity:0.7">N601JV</span>
+                    </div>
+                </div>
+
+                <div class="amenities-row">
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        7 Pax
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14" />
+                            <path d="M2 20h20" />
+                            <path d="M14 12v.01" />
+                        </svg>
+                        Enclosed Lav
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                            <line x1="12" y1="20" x2="12.01" y2="20" />
+                        </svg>
+                        WiFi
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="crew-mini">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face"
+                            class="crew-avatar-mini" alt="Pilot">
+                        <span>Cpt. James Chen & Crew</span>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-row">
+                            <span class="price-label">Total Trip Cost</span>
+                            <span class="price-main">$12,800</span>
+                        </div>
+                    </div>
+
+                    <button class="select-btn">Select Aircraft</button>
+                </div>
+            </article>
+
+            <!-- Quote 3: Fly Exclusive -->
+            <article class="quote-card">
+                <div class="card-header">
+                    <div class="operator-brand">
+                        <div class="operator-logo-text" style="color: #005BBB;">flyExclusive</div>
+                        <span class="operator-meta">Operator</span>
+                    </div>
+                    <div class="safety-pill safety-platinum">ARGUS Platinum</div>
+                </div>
+
+                <div class="aircraft-info">
+                    <div class="aircraft-type">Citation Excel</div>
+                    <div class="aircraft-specs">
+                        <span>Midsize</span> • <span style="opacity:0.7">N560FX</span>
+                    </div>
+                </div>
+
+                <div class="amenities-row">
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        8 Pax
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 20V6a2 2 0 0 0-2-2H8a2 2 0 0 0-2 2v14" />
+                            <path d="M2 20h20" />
+                            <path d="M14 12v.01" />
+                        </svg>
+                        Enclosed Lav
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                            <line x1="12" y1="20" x2="12.01" y2="20" />
+                        </svg>
+                        WiFi
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="crew-mini">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100&h=100&fit=crop&crop=face"
+                            class="crew-avatar-mini" alt="Pilot">
+                        <span>Cpt. Michael Ross & Crew</span>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-row">
+                            <span class="price-label">Total Trip Cost</span>
+                            <span class="price-main">$13,950</span>
+                        </div>
+                    </div>
+
+                    <button class="select-btn">Select Aircraft</button>
+                </div>
+            </article>
+
+            <!-- Quote 4: Pegasus -->
+            <article class="quote-card">
+                <div class="card-header">
+                    <div class="operator-brand">
+                        <div class="operator-logo-text" style="color: #d4af37;">PEGASUS</div>
+                        <span class="operator-meta">Operator</span>
+                    </div>
+                    <div class="safety-pill safety-gold">Wyvern Reg</div>
+                </div>
+
+                <div class="aircraft-info">
+                    <div class="aircraft-type">Gulfstream GIV</div>
+                    <div class="aircraft-specs">
+                        <span>Heavy Jet</span> • <span style="opacity:0.7">N400PG</span>
+                    </div>
+                </div>
+
+                <div class="amenities-row">
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg>
+                        13 Pax
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3" />
+                            <circle cx="12" cy="12" r="3" />
+                        </svg>
+                        Full Galley
+                    </div>
+                    <div class="amenity-pill">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                            <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                            <line x1="12" y1="20" x2="12.01" y2="20" />
+                        </svg>
+                        Hi-Speed WiFi
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <div class="crew-mini">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=face"
+                            class="crew-avatar-mini" alt="Pilot">
+                        <span>Cpt. Elena Rodriguez & Crew</span>
+                    </div>
+
+                    <div class="price-box">
+                        <div class="price-row">
+                            <span class="price-label">Total Trip Cost</span>
+                            <span class="price-main">$18,200</span>
+                        </div>
+                    </div>
+
+                    <button class="select-btn">Select Aircraft</button>
+                </div>
+            </article>
+
+        </main>
+
+        <div class="min-footer">
+            PRICE TRANSPARENCY GUARANTEED • BIRDVERSE
+        </div>
+
+    </div>
+</body>
+
+</html>

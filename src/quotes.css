@@ -1,0 +1,342 @@
+/* Glass Cockpit Quote Selector Styles */
+
+:root {
+    --cockpit-bg: #0a0a0f;
+    --cockpit-surface: #12131a;
+    --cockpit-card: #1a1b25;
+    --cockpit-border: rgba(255, 255, 255, 0.08);
+    --cockpit-glow: rgba(100, 200, 255, 0.15);
+    --glass-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+
+    --text-primary: #ffffff;
+    --text-secondary: rgba(255, 255, 255, 0.7);
+    --text-muted: rgba(255, 255, 255, 0.5);
+
+    --accent-cyan: #00d4ff;
+    --accent-emerald: #10b981;
+    --accent-amber: #f59e0b;
+    --accent-gold: #fbbf24;
+
+    --safety-platinum: linear-gradient(135deg, #e5e7eb 0%, #9ca3af 50%, #e5e7eb 100%);
+    --safety-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #fbbf24 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: var(--cockpit-bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    line-height: 1.4;
+    height: 100vh;
+    /* Force full height for layout */
+    overflow: hidden;
+    /* Hide scrollbar if fitting in viewport */
+    display: flex;
+    flex-direction: column;
+}
+
+.cockpit-container {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+/* Flight HUD Header */
+.flight-hud {
+    background: var(--glass-gradient);
+    border: 1px solid var(--cockpit-border);
+    border-radius: 12px;
+    padding: 16px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(20px);
+    flex-shrink: 0;
+}
+
+.hud-left {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.hud-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+
+.route-display {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.airport-code {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.route-arrow svg {
+    color: var(--accent-cyan);
+    width: 16px;
+    height: 16px;
+}
+
+.hud-stats {
+    display: flex;
+    gap: 24px;
+}
+
+.detail-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.detail-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--text-muted);
+}
+
+.detail-value {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+}
+
+.status-found {
+    color: var(--accent-emerald);
+}
+
+/* Quote Grid */
+.quote-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 16px;
+    flex: 1;
+    min-height: 0;
+    /* Allow grid to shrink */
+}
+
+/* Compact Quote Card */
+.quote-card {
+    background: var(--cockpit-card);
+    border: 1px solid var(--cockpit-border);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.quote-card:hover {
+    border-color: rgba(0, 212, 255, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, var(--cockpit-card) 0%, rgba(26, 27, 37, 0.9) 100%);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.operator-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.operator-logo-text {
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.operator-meta {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.safety-pill {
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.safety-platinum {
+    background: var(--safety-platinum);
+    color: #1a1b25;
+}
+
+.safety-gold {
+    background: var(--safety-gold);
+    color: #1a1b25;
+}
+
+.aircraft-info {
+    margin-bottom: 12px;
+}
+
+.aircraft-type {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--accent-cyan);
+    margin-bottom: 2px;
+}
+
+.aircraft-specs {
+    font-size: 12px;
+    color: var(--text-secondary);
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    display: flex;
+    gap: 8px;
+}
+
+.amenities-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+}
+
+.amenity-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--cockpit-border);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 11px;
+    color: var(--text-secondary);
+    white-space: nowrap;
+}
+
+.amenity-pill svg {
+    width: 12px;
+    height: 12px;
+    color: var(--accent-cyan);
+    opacity: 0.8;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.crew-mini {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: var(--text-secondary);
+    padding: 6px 10px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 8px;
+}
+
+.crew-avatar-mini {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #333;
+    object-fit: cover;
+}
+
+.price-box {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid var(--cockpit-border);
+}
+
+.price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.price-label {
+    font-size: 11px;
+    color: var(--text-muted);
+}
+
+.price-main {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    letter-spacing: -0.5px;
+}
+
+.select-btn {
+    width: 100%;
+    padding: 12px;
+    background: rgba(0, 212, 255, 0.1);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+    color: var(--accent-cyan);
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.select-btn:hover {
+    background: var(--accent-cyan);
+    color: #000;
+}
+
+/* Footer (optional/minimized) */
+.min-footer {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    .quote-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .cockpit-container {
+        height: auto;
+    }
+}
