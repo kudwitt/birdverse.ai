@@ -12,8 +12,6 @@ function App() {
             <NavBar />
             <main>
                 <Hero />
-                <StorySection />
-                <BentoGrid />
                 <WaitlistForm />
             </main>
             <Footer />

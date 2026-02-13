@@ -1,10 +1,13 @@
 import React from 'react';
+import content from '../content.json';
 
 const BentoGrid = () => {
+    const { title, flier, operator, network } = content.bento;
+
     return (
         <section className="bento-section">
             <div className="container">
-                <h2 className="section-title">Designed for two worlds.</h2>
+                <h2 className="section-title">{title}</h2>
                 <div className="grid">
                     {/* Card 1: Private Flier */}
                     <div className="card flier">
@@ -14,9 +17,9 @@ const BentoGrid = () => {
                             </svg>
                         </div>
                         <div className="card-content">
-                            <span className="eyebrow">Private Fliers</span>
-                            <h3>Fly smart.</h3>
-                            <p>Trip quotes are a text message away. Plus, with no membership fees and a transparent platform fee that's a fraction of traditional broker markups, you'll save thousands on every trip.</p>
+                            <span className="eyebrow">{flier.eyebrow}</span>
+                            <h3>{flier.title}</h3>
+                            <p>{flier.description}</p>
                         </div>
                     </div>
 
@@ -28,16 +31,16 @@ const BentoGrid = () => {
                             </svg>
                         </div>
                         <div className="card-content">
-                            <span className="eyebrow">Operators</span>
-                            <h3>Remove the middleman.</h3>
-                            <p>Provide service directly to private fliers and communicate directly with them to insure their needs are met and to build a direct relationships.</p>
+                            <span className="eyebrow">{operator.eyebrow}</span>
+                            <h3>{operator.title}</h3>
+                            <p>{operator.description}</p>
                         </div>
                     </div>
 
                     {/* Card 3: Network (Compliant) */}
                     <div className="card network">
-                        <h3>See Everything</h3>
-                        <p>See who you can fly with and which aircraft you can be flying on - from our global network of top-rated private aviation operators. No hidden details. Just a simple list with safety credentials, aircraft details, and fully transparent pricing.</p>
+                        <h3>{network.title}</h3>
+                        <p>{network.description}</p>
                     </div>
                 </div>
             </div>

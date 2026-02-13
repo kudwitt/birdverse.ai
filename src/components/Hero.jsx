@@ -2,20 +2,20 @@ import React from 'react';
 import content from '../content.json';
 
 const Hero = () => {
-    const { title, subtitle } = content.hero;
+    const { brand, headlinePrefix, headlineGradient, ctaPrimary, ctaSecondary } = content.hero;
 
     return (
         <section className="hero-section" id="overview">
             <div className="container hero-container">
-                <div className="hero-brand fade-in-up" style={{ animationDelay: '0.1s' }}>{title}</div>
+                <div className="hero-brand fade-in-up" style={{ animationDelay: '0.1s' }}>{brand}</div>
                 <h1 className="hero-headline fade-in-up" style={{ animationDelay: '0.3s' }}>
-                    How smart money<br />
-                    <span className="text-gradient">flies private.</span>
+                    {headlinePrefix}<br />
+                    <span className="text-gradient">{headlineGradient}</span>
                 </h1>
 
                 <div className="hero-cta-container fade-in-up" style={{ animationDelay: '0.5s' }}>
-                    <a href="#waitlist" className="btn btn-primary">Notify me</a>
-                    <a href="#story" className="link-arrow">Learn more <span className="arrow">›</span></a>
+                    <a href="#waitlist" className="btn btn-primary">{ctaPrimary}</a>
+                    <a href="#story" className="link-arrow">{ctaSecondary} <span className="arrow">›</span></a>
                 </div>
             </div>
 
@@ -53,8 +53,8 @@ const Hero = () => {
                 }
 
                 .hero-headline {
-                    font-size: 80px;
-                    line-height: 1.05;
+                    font-size: 54px;
+                    line-height: 1.1;
                     font-weight: 600;
                     letter-spacing: -0.015em;
                     color: var(--color-text);

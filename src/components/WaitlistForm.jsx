@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import content from '../content.json';
 
 const WaitlistForm = () => {
     const [email, setEmail] = useState('');
     const [status, setStatus] = useState('idle'); // idle, loading, success, error
+    const { title, subtitle, emailPlaceholder, successMessage, errorMessage } = content.waitlist;
 
     // Replace this with your actual Formspree Endpoint or API URL
     const FORM_ENDPOINT = "https://formspree.io/f/manrzlvg";
@@ -56,14 +58,14 @@ const WaitlistForm = () => {
         <section className="notify-section" id="waitlist">
             <div className="container">
                 <div className="notify-content">
-                    <h2>Be the first to know.</h2>
-                    <p>Birdverse is currently invite-only.</p>
+                    <h2>{title}</h2>
+                    <p>{subtitle}</p>
 
                     <form onSubmit={handleSubmit} className="notify-form">
                         <input
                             type="email"
                             name="email"
-                            placeholder="Email address"
+                            placeholder={emailPlaceholder}
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
@@ -86,8 +88,8 @@ const WaitlistForm = () => {
                         </button>
                     </form>
 
-                    {status === 'success' && <p className="success-msg fade-in">You're on the list.</p>}
-                    {status === 'error' && <p className="error-msg fade-in">Something went wrong. Please try again.</p>}
+                    {status === 'success' && <p className="success-msg fade-in">{successMessage}</p>}
+                    {status === 'error' && <p className="error-msg fade-in">{errorMessage}</p>}
                 </div>
             </div>
 

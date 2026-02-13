@@ -1,21 +1,39 @@
 {
     "hero": {
-        "title": "Birdverse",
-        "subtitle": "How Smart Money Flies Private",
-        "tagline": "The Growth Engine for Part 135 Operators",
-        "ctaText": "Request Access"
+        "brand": "Birdverse",
+        "headlinePrefix": "How smart travelers and organizations",
+        "headlineGradient": "fly private.",
+        "ctaPrimary": "Notify me",
+        "ctaSecondary": "Learn more"
+    },
+    "story": {
+        "segment1": "Not long ago, you needed a broker to trade stocks and a car service for transportation.",
+        "segment2": "When you fly private, charter brokers prefer being opaque.",
+        "segment3": "Birdverse connects private fliers to the world's best operators showing you all the options with full pricing transparency."
+    },
+    "bento": {
+        "title": "Designed for two worlds.",
+        "flier": {
+            "eyebrow": "Private Fliers",
+            "title": "Fly smart.",
+            "description": "Trip quotes are a text message away. Plus, with no membership fees and complete transparency."
+        },
+        "operator": {
+            "eyebrow": "Operators",
+            "title": "Remove the middleman.",
+            "description": "Provide service directly to private fliers and communicate directly with them to insure their needs are met and to build a direct relationships."
+        },
+        "network": {
+            "title": "See Everything",
+            "description": "See who you can fly with and which aircraft you can be flying on - from our global network of top-rated private aviation operators. No hidden details. Just a simple list with safety credentials, aircraft details, and fully transparent pricing."
+        }
     },
     "waitlist": {
-        "title": "Join the Birdverse",
-        "description": "Secure your spot in the future of private aviation.",
-        "roles": {
-            "customer": "Passenger",
-            "operator": "Operator"
-        },
-        "buttonText": {
-            "customer": "Join Waitlist",
-            "operator": "Apply as Operator"
-        }
+        "title": "Be the first to know.",
+        "subtitle": "Birdverse is currently invite-only.",
+        "emailPlaceholder": "Email address",
+        "successMessage": "You're on the list.",
+        "errorMessage": "Something went wrong. Please try again."
     },
     "footer": {
         "brand": "Birdverse",

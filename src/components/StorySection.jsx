@@ -1,8 +1,10 @@
 import React, { useEffect, useRef, useState } from 'react';
+import content from '../content.json';
 
 const StorySection = () => {
     const [reveal, setReveal] = useState(0);
     const sectionRef = useRef(null);
+    const { segment1, segment2, segment3 } = content.story;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -27,16 +29,14 @@ const StorySection = () => {
         <section className="story-section" ref={sectionRef} id="story">
             <div className="container">
                 <p className="story-text">
-                    <span className="story-segment" style={{ opacity: Math.max(0.1, Math.min(1, reveal * 1.5)) }}>
-                        Believe it or not 30+ years ago it cost <span className="highlight-warm">$400</span> in broker commissions just to trade 100 shares of stock.
-                    </span>
+                    <span className="story-segment" style={{ opacity: Math.max(0.1, Math.min(1, reveal * 1.5)) }} dangerouslySetInnerHTML={{ __html: segment1 }} />
                     <br /><br />
                     <span className="story-segment" style={{ opacity: Math.max(0.1, Math.min(1, (reveal - 0.3) * 2)) }}>
-                        The aviation industry is stuck in that past. Private fliers tolerate obsequious brokers and opaque pricing.
+                        {segment2}
                     </span>
                     <br /><br />
                     <span className="story-segment highlight-brand" style={{ opacity: Math.max(0.1, Math.min(1, (reveal - 0.6) * 3)) }}>
-                        Birdverse instantly connects the world's best operators directly with private fliers to provide a plethora of options and full pricing transparency.
+                        {segment3}
                     </span>
                 </p>
             </div>
